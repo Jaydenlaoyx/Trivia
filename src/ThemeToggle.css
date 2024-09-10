@@ -1,0 +1,41 @@
+.themeToggleContainer {
+    margin-left: 90%;
+    margin-top: 16px;
+}
+
+.themeToggle {
+    display: block;
+    width: 112px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 32px;
+    background-color: rgb(237, 174, 55);
+}
+
+.themeToggle:hover {
+    cursor: pointer;
+}
+
+.themeToggleBubble-light-mode {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(43, 43, 43);
+    background-color: rgb(43, 43, 43);
+    margin-top: -29px;
+    margin-left: 84px;
+    border-radius: 12px;
+}
+
+.themeToggleBubble-dark-mode {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(251, 251, 251);
+    background-color: rgb(251, 251, 251);
+    margin-top: -29px;
+    margin-left: 4px;
+    border-radius: 12px;
+}

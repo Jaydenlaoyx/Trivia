@@ -5,9 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* color mode */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* default dark mode for application */
+:root {
+  --background-color: rgb(43, 43, 43);
+  --text-color: rgb(251, 251, 251);
+}
+
+/* dark mnode */
+.light-mode {
+  --background-color: rgb(251, 251, 251);
+  --text-color: rgb(43, 43, 43);
 }

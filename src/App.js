@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import { useState, useEffect } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 function App() {
+
+  const [colorMode, setColorMode] = useState("dark-mode");
+
+  useEffect(() => {
+    if (colorMode === 'light-mode') {
+        document.body.classList.add('light-mode');
+    } else {
+        document.body.classList.remove('light-mode');
+    }
+}, [colorMode]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={"App " + colorMode}>
+        < ThemeToggle colorMode={colorMode} setColorMode={setColorMode}/>
+        < Home/>
+      </div>
+    </>
   );
 }
 
