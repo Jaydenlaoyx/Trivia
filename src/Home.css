@@ -4,13 +4,29 @@
     height: 64px;
     font-size: 28px;
     font-weight: 600;
-    border: 1px solid black;
+    border: 2px solid rgb(103, 14, 128);
     border-radius: 32px;
     margin: auto;
-    margin-top: 20%;
+    margin-top: 24px;
     background-color: rgb(237, 174, 55);
+    color: rgb(103, 14, 128);
 }
 
 .startGameButton:hover {
     cursor: pointer;
+}
+
+.gameTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+    margin-top: 15%;
+}
+
+.titleLetter {
+    color: rgb(237, 174, 55);
+}
+
+.letterType1 {
+    color: rgb(103, 14, 128);
 }
