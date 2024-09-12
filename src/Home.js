@@ -1,15 +1,15 @@
 import { useState } from "react";
 import "./Home.css"
 
-const Home = () => {
+const Home = ( {gameRunning, setGameRunning} ) => {
 
     const handleStartGame = () => {
-
+            setGameRunning(true);
     };
 
     return (
         <>
-            <div className="gameTitle">
+             <div className="gameTitle">
                 <span className="titleLetter letterType1">T</span>
                 <span className="titleLetter">r</span>
                 <span className="titleLetter">i</span>

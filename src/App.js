@@ -2,10 +2,12 @@ import './App.css';
 import Home from './Home';
 import { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
+import SelectCategoriesScreen from './SelectCategoriesScreen';
 
 function App() {
 
   const [colorMode, setColorMode] = useState("dark-mode");
+  const [gameRunning, setGameRunning] = useState(false);
 
   useEffect(() => {
     if (colorMode === 'light-mode') {
@@ -18,8 +20,9 @@ function App() {
   return (
     <>
       <div className={"App " + colorMode}>
-        < ThemeToggle colorMode={colorMode} setColorMode={setColorMode}/>
-        < Home/>
+        <ThemeToggle colorMode={colorMode} setColorMode={setColorMode}/>
+        {!gameRunning && <Home gameRuning={gameRunning} setGameRunning={setGameRunning}/>}
+        {gameRunning && <SelectCategoriesScreen />}
       </div>
     </>
   );

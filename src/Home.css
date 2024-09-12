@@ -14,6 +14,9 @@
 
 .startGameButton:hover {
     cursor: pointer;
+    color: rgb(237, 174, 55);
+    background-color: rgb(103, 14, 128);
+    border-color: rgb(237, 174, 55);
 }
 
 .gameTitle {

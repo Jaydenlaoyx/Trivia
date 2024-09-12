@@ -1,0 +1,31 @@
+button:hover {
+    cursor: pointer;
+    color: rgb(237, 174, 55);
+    background-color: rgb(103, 14, 128);
+    border-color: rgb(237, 174, 55);
+}
+
+.categoriesButtonContainer {
+    display:block;
+    height: 360px;
+    width: 840px;
+    /* border: 1px solid red; */
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.geographyCategory,
+.sportsCategory,
+.musicCategory,
+.scienceCategory {
+    width: 320px;
+    height: 120px;
+    margin-top: 36px;
+    margin-left: 40px;
+    border: 2px solid rgb(103, 14, 128);
+    border-radius: 24px;
+    background-color: rgb(237, 174, 55);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(103, 14, 128);
+    font-size: 32px;
+}
